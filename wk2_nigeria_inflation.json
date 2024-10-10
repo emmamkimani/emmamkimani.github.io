@@ -36,7 +36,7 @@
         "field": "date",
         "type": "temporal",
         "axis": {
-          "title": "",
+          "title": "Year",
           "titleColor": "#122B39",
           "grid": false
         }
@@ -45,7 +45,7 @@
         "field": "value",
         "type": "quantitative",
         "axis": {
-          "title": "",
+          "title": "Inflation rate",
           "titleColor": "#122B39",
           "grid": false
         }
