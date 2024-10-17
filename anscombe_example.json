@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+    "description": "Anscombe example",
+  
+     "title": {
+        "text": "Anscombe Example",
+        "subtitle":["The importance of graphs in analysis; Source: Anscombe F J","The American Statistician"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "subtitleColor":"black",
+        "anchor": "start",
+        "color": "black"},
+  
+      "config": {
+      "background":"white",
+      "view": {
+        "stroke": "transparent"}},
+  
+    
+   
+    "data": {"url": "https://raw.githubusercontent.com/emmamkimani/emmamkimani.github.io/refs/heads/main/anscombesQuartet.csv"},
+   
+    "mark": {
+      "type":"point",
+      "color":"rgba(0,67,167)",
+      "size":100},
+  
+    "height":150,
+    "width":150,
+   
+    "encoding": {
+      "x": {
+        "field": "policyX", 
+        "type": "quantitative",
+          },
+  
+      "y": {
+        "field": "impactY", 
+        "type": "quantitative",
+        "title":"Impact Y"
+       },
+
+       "facet": {
+        "field":"Dataset",
+        "type": "nominal",
+        "title": "null",
+        "columns": 2
+       },
+  
+      "tooltip":
+      [{"field":"areaName", "title":"Area"}]
+     }
+  }
