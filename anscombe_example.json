@@ -32,7 +32,7 @@
     "encoding": {
       "x": {
         "field": "policyX", 
-        "type": "quantitative",
+        "type": "quantitative"
           },
   
       "y": {
