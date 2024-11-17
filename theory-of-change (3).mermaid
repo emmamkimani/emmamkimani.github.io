@@ -1,0 +1,63 @@
+flowchart LR
+    subgraph Problems["Problem Statement"]
+        direction TB
+        P1["Climate vulnerability & erratic rainfall in semi-arid regions"] --> 
+        P2["Groundwater depletion due to water-intensive crops"] --> 
+        P3["Poor nutritional health of women & children"] --> 
+        P4["Erosion of traditional knowledge & biodiversity"] --> 
+        P5["Marginalized smallholder women farmers"]
+    end
+
+    subgraph Inputs["Inputs"]
+        direction TB
+        I1["Financial Resources:<br/>- Microcredit & revolving funds<br/>- NBFC partnerships<br/>- Agri-tech & FMCG partnerships"] --> 
+        I2["Capacity Building:<br/>- Millet cultivation training<br/>- FPO governance training<br/>- Digital library & seed banks"] --> 
+        I3["Technology:<br/>- Bio-fortification<br/>- Improved genetic strains<br/>- Digital market tools"] --> 
+        I4["Policy & Advocacy:<br/>- Mid-Day Meal integration<br/>- Government collaboration"] --> 
+        I5["Marketing & Value Chain:<br/>- Climate-positive branding<br/>- Supply chain development"]
+    end
+
+    subgraph Activities["Activities"]
+        direction TB
+        A1["Women-Led FPOs:<br/>- SHG mobilization<br/>- Democratic governance"] --> 
+        A2["Sustainable Cultivation:<br/>- Low-input farming<br/>- Bio-fortified seeds"] --> 
+        A3["Value Addition:<br/>- Processing training<br/>- Product innovation"] --> 
+        A4["Behavioral Change:<br/>- Awareness campaigns<br/>- Farming incentives"] --> 
+        A5["Market Creation:<br/>- Private sector partnerships<br/>- Direct marketing channels"]
+    end
+
+    subgraph Outputs["Outputs"]
+        direction TB
+        O1["Sustainable women-led FPOs established"] --> 
+        O2["Increased millet cultivation area"] --> 
+        O3["Enhanced market access"] --> 
+        O4["Community seed bank & knowledge repository"] --> 
+        O5["Strengthened women's participation"]
+    end
+
+    subgraph Outcomes["Outcomes"]
+        direction TB
+        ST["Short-Term:<br/>- Increased millet adoption<br/>- Improved farmer incomes<br/>- Greater awareness"] --> 
+        MT["Medium-Term:<br/>- Improved soil fertility<br/>- Reduced water stress<br/>- Better maternal & child health"] --> 
+        LT["Long-Term:<br/>- Climate-resilient systems<br/>- Women's empowerment<br/>- Scaled model across Africa"] --> 
+        IM["Impact:<br/>- SDGs 2,3,12,13 progress<br/>- Climate adaptation<br/>- Biodiversity preservation<br/>- Socioeconomic upliftment"]
+    end
+
+    Problems --> Inputs
+    Inputs --> Activities
+    Activities --> Outputs
+    Outputs --> Outcomes
+
+    classDef problemNode fill:#ffcccc,font-size:14px
+    classDef inputNode fill:#ccffcc,font-size:14px
+    classDef activityNode fill:#cce5ff,font-size:14px
+    classDef outputNode fill:#ffe5cc,font-size:14px
+    classDef outcomeNode fill:#e5ccff,font-size:14px
+
+    class P1,P2,P3,P4,P5 problemNode
+    class I1,I2,I3,I4,I5 inputNode
+    class A1,A2,A3,A4,A5 activityNode
+    class O1,O2,O3,O4,O5 outputNode
+    class ST,MT,LT,IM outcomeNode
+
+    linkStyle default stroke-width:0px
