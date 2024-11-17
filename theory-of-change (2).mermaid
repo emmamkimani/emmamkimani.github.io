@@ -1,0 +1,45 @@
+flowchart LR
+    subgraph Problems["Problem Statement"]
+        direction TB
+        P1["Climate vulnerability & erratic rainfall"] --> P2["Groundwater depletion"] --> P3["Poor nutritional health"] --> P4["Erosion of traditional knowledge"] --> P5["Marginalized women farmers"]
+    end
+
+    subgraph Inputs["Inputs"]
+        direction TB
+        I1["Financial Resources:<br/>- Microcredit<br/>- Revolving funds<br/>- NBFC partnerships"] --> I2["Capacity Building:<br/>- Training programs<br/>- Digital library<br/>- Seed banks"] --> I3["Technology:<br/>- Bio-fortification<br/>- Digital tools<br/>- Climate-smart practices"] --> I4["Policy & Advocacy:<br/>- Government programs<br/>- Local collaborations"] --> I5["Marketing & Value Chain:<br/>- Branding<br/>- Supply chain development"]
+    end
+
+    subgraph Activities["Activities"]
+        direction TB
+        A1["Women-Led FPOs:<br/>- SHG formation<br/>- Democratic governance"] --> A2["Sustainable Cultivation:<br/>- Eco-friendly practices<br/>- Water conservation"] --> A3["Value Addition:<br/>- Processing<br/>- Product development"] --> A4["Behavioral Change:<br/>- Awareness campaigns<br/>- Incentive programs"] --> A5["Market Linkages:<br/>- Private partnerships<br/>- Direct marketing"]
+    end
+
+    subgraph Outputs["Outputs"]
+        direction TB
+        O1["Sustainable FPOs established"] --> O2["Increased millet cultivation area"] --> O3["Market access improved"] --> O4["Knowledge repository created"] --> O5["Women's participation enhanced"]
+    end
+
+    subgraph Outcomes["Outcomes & Impact"]
+        direction TB
+        ST["Short-Term:<br/>- Increased adoption<br/>- Improved incomes<br/>- Greater awareness"] --> MT["Medium-Term:<br/>- Improved soil health<br/>- Reduced water stress<br/>- Better nutrition"] --> LT["Long-Term:<br/>- Climate resilience<br/>- Women's empowerment<br/>- Scalable model"] --> IM["Ultimate Impact:<br/>- SDGs Progress<br/>- Climate Adaptation<br/>- Biodiversity<br/>- Social upliftment"]
+    end
+
+    Problems --> Inputs
+    Inputs --> Activities
+    Activities --> Outputs
+    Outputs --> Outcomes
+
+    classDef problemNode fill:#ffcccc,font-size:14px
+    classDef inputNode fill:#ccffcc,font-size:14px
+    classDef activityNode fill:#cce5ff,font-size:14px
+    classDef outputNode fill:#ffe5cc,font-size:14px
+    classDef outcomeNode fill:#e5ccff,font-size:14px
+
+    class P1,P2,P3,P4,P5 problemNode
+    class I1,I2,I3,I4,I5 inputNode
+    class A1,A2,A3,A4,A5 activityNode
+    class O1,O2,O3,O4,O5 outputNode
+    class ST,MT,LT,IM outcomeNode
+
+    linkStyle default stroke-width:0px
+
